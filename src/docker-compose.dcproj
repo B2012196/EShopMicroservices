@@ -5,11 +5,13 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
     <ProjectGuid>16f06eef-fdfa-4bbc-a9bd-8c10d6174726</ProjectGuid>
-    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerLaunchAction>None</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>catalog.api</DockerServiceName>
   </PropertyGroup>
-  <ItemGroup>
+  <PropertyGroup>
+    <DockerServiceName>ordering.api</DockerServiceName>
+  </PropertyGroup>
+  <ItemGroup>   
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
